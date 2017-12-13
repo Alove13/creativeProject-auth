@@ -1,0 +1,5 @@
+nohup: ignoring input
+
+> creative6@0.0.0 start /opt/bitnami/apache2/htdocs/creativeProject-auth/creative6
+> node ./bin/www "node" "./bin/www"
+
