@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+</head>
+<body ng-app="mainApp" ng-controller="mainCtrl">
+<h1>Couple Signup Page</h1>
+<a href="/"><button>Return Home</button></a><br>
+ <input id="txtEmail" type="email" placeholder="Email"><br>
+ <input id="txtPassword" type="password" placeholder="Password"><br>
+ <button ng-click="loginCouple()" id="btnLogin" class="btn btn-action">
+  Log In
+ </button>
+
+ <button id="btnSignUp" ng-click="signUpCouple()" class="btn btn-secondary">
+  Sign Up
+ </button>
+
+ <button id="btnLogout" ng-click="logoutCouple()" class="btn btn-action">
+  Log Out
+ </button><br>
+
+ <a id="btnLocations" href="/viewLocations"><button class="btn btn-action">
+  View Places to go on Dates
+ </button></a>
+</div>
+
+<script src="javascripts/interfaces.js"></script>
+</body>
+</html>

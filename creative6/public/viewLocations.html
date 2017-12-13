@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="">
+<link rel="stylesheet" href="/stylesheets/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<!-- AngularFire -->
+<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC9hOsCCFHlVqSbyysOXDuSvnYzNK_1_8s",
+    authDomain: "themusichook-fe723.firebaseapp.com",
+    databaseURL: "https://themusichook-fe723.firebaseio.com",
+    projectId: "themusichook-fe723",
+    storageBucket: "themusichook-fe723.appspot.com",
+    messagingSenderId: "769123829938"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+</head>
+
+<body ng-app="musicApp" ng-controller="musicCtrl">
+<h1>Check out these cool places to go on dates!</h1>
+<h3>Go to Home Page</h3>
+<a href="/"><button>Home Page</button></a>
+
+<div class="row">
+
+<div class="column">
+ <div ng-repeat="x in listVenues">
+  {{x.name}}
+  <img ng-src="{{x.imgUrl}}"/><br>
+ </div>
+</div>
+
+</div> <!--end of class="row" div-->
+
+<script src="javascripts/script.js"></script>
+</body>
+</html>
